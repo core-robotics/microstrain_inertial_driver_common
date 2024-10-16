@@ -13,7 +13,7 @@
 
 # port is the main port that the device will communicate over. For all devices except the GQ7, this is the only available port.
 # aux_port is only available for the GQ7 and is only needed when streaming RTCM corrections to the device from ROS, or if you want to publish NMEA sentences from this node
-port         : "/dev/ttyACM0"
+port         : "/dev/ttyIMU"
 baudrate     : 115200
 aux_port     : "/dev/ttyACM1"
 aux_baudrate : 115200
@@ -439,7 +439,7 @@ pressure_low_pass_filter_frequency : 1
 
 # The speed at which the individual IMU publishers will publish at.
 imu_data_raw_rate         : 1    # Rate of imu/data_raw topic
-imu_data_rate             : 100  # Rate of imu/data topic
+imu_data_rate             : 50  # Rate of imu/data topic
 imu_mag_data_rate         : 0    # Rate of imu/mag topic
 imu_pressure_data_rate    : 0    # Rate of imu/pressure topic
 imu_wheel_speed_data_rate : 0    # Rate of imu/wheel_Speed topic
