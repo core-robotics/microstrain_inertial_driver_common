@@ -150,7 +150,7 @@ gnss2_antenna_offset        : [0.0, 0.7, -1.0]
 
 # GNSS signal configuration
 gnss_glonass_enable : False
-gnss_galileo_enable : True
+gnss_galileo_enable : False
 gnss_beidou_enable  : False
 
 
@@ -160,7 +160,7 @@ gnss_beidou_enable  : False
 
 # (GQ7 Only) Enable RTK dongle interface. This is required when using a 3DM-RTK
 # Note: Enabling this will cause the node to publish mip/gnss_corrections/rtk_corrections_status
-rtk_dongle_enable : True
+rtk_dongle_enable : False
 
 # (GQ7 Only) Allow the node to receive RTCM messages on the /rtcm topic and publish NMEA sentences from the aux port on /nmea.
 #            It is suggested to use https://github.com/LORD-MicroStrain/ntrip_client with this interface
@@ -172,11 +172,11 @@ ntrip_interface_enable : False
 # ****************************************************************** 
 
 # (GQ7/CV7 only) Aiding measurement control 
-filter_enable_gnss_pos_vel_aiding     : True
-filter_enable_gnss_heading_aiding     : True
+filter_enable_gnss_pos_vel_aiding     : False
+filter_enable_gnss_heading_aiding     : False
 filter_enable_altimeter_aiding        : False
 filter_enable_odometer_aiding         : False
-filter_enable_magnetometer_aiding     : False
+filter_enable_magnetometer_aiding     : True
 filter_enable_external_heading_aiding : False
 
 # (GQ7 only) Filter Initialization control
