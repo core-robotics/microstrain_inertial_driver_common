@@ -439,7 +439,7 @@ pressure_low_pass_filter_frequency : 1
 
 # The speed at which the individual IMU publishers will publish at.
 imu_data_raw_rate         : 1    # Rate of imu/data_raw topic
-imu_data_rate             : 50  # Rate of imu/data topic
+imu_data_rate             : 100  # Rate of imu/data topic
 imu_mag_data_rate         : 0    # Rate of imu/mag topic
 imu_pressure_data_rate    : 0    # Rate of imu/pressure topic
 imu_wheel_speed_data_rate : 0    # Rate of imu/wheel_Speed topic
@@ -464,7 +464,7 @@ gnss2_time_data_rate           : 0  # Rate of gnss_2/time topic
 
 # The speed at which the individual Filter publishers will publish at.
 filter_human_readable_status_data_rate : 1  # Rate of ekf/status
-filter_imu_data_rate                   : 0  # Rate of ekf/imu/data topic
+filter_imu_data_rate                   : 100  # Rate of ekf/imu/data topic
                                             # Note: Both filter_odometry_earth_data_rate and filter_odometry_map_data_rate depend on the contents of this message.
                                             #       If either are set to a higher value, this message will be published at that rate.
 filter_llh_position_data_rate          : 0  # Rate of ekf/llh_position topic
