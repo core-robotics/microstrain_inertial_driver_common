@@ -283,7 +283,7 @@ filter_declination        : 0.23
 
 # Controls what kind of linear acceleration data is used in the Filter IMU message.
 #     If this is set to true, the acceleration will not factor out gravity, if set to false gravity will be filtered out of the linear acceleration.
-filter_use_compensated_accel : True
+filter_use_compensated_accel : false
 
 # (GQ7/CV7 full support, GX5-45 limited support) Adaptive filter settings
 #     Adaptive level: 0 - off, 1 - Conservative, 2 = Moderate (default), 3 = agressive
